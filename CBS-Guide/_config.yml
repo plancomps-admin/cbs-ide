@@ -1,0 +1,63 @@
+title: CBS IDE User Guide
+email: plancomps@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  User guide for the prototype CBS IDE
+baseurl: "/cbs-ide" # the subpath of your site, e.g. /blog
+url: "https://plancomps.github.io"
+
+aux_links:
+  "CBS-Guide sources":
+    - "//github.com/plancomps/cbs-ide/tree/main/CBS-Guide"
+
+
+# Build settings
+remote_theme: pdmosses/just-the-docs@combination-rec-nav
+plugins:
+  - jekyll-remote-theme
+
+defaults:
+  -
+    scope:
+      path: "docs" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
+# back_to_top: true
+# back_to_top_text: "Back to top"
+
+# footer_content: ""
+
+nav_next_prev: true
+
+callouts:
+  note:
+    title: Note
+    color: purple
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+compress_html:
+  blanklines: true
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
