@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="shortcut icon" href="/cbs-ide/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/cbs-ide/assets/css/just-the-docs-default.css">
+    <script type="text/javascript" src="/cbs-ide/assets/js/vendor/lunr.min.js"></script>
+  <script type="text/javascript" src="/cbs-ide/assets/js/just-the-docs.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Specification | CBS IDE User Guide</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Specification" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="User guide for the prototype CBS IDE" />
+<meta property="og:description" content="User guide for the prototype CBS IDE" />
+<link rel="canonical" href="https://plancomps.github.io/cbs-ide/docs/specification/" />
+<meta property="og:url" content="https://plancomps.github.io/cbs-ide/docs/specification/" />
+<meta property="og:site_name" content="CBS IDE User Guide" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Specification" />
+<script type="application/ld+json">
+{"description":"User guide for the prototype CBS IDE","url":"https://plancomps.github.io/cbs-ide/docs/specification/","@type":"WebPage","headline":"Specification","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="svg-link" viewBox="0 0 24 24">
+      <title>Link</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+      </svg>
+    </symbol>
+    <symbol id="svg-search" viewBox="0 0 24 24">
+      <title>Search</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+        <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </symbol>
+    <symbol id="svg-menu" viewBox="0 0 24 24">
+      <title>Menu</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+        <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </symbol>
+    <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+      <title>Expand</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </symbol>
+    <symbol id="svg-doc" viewBox="0 0 24 24">
+      <title>Document</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+      </svg>
+    </symbol>
+  </svg>
+  <script type="text/javascript" src="/cbs-ide/assets/js/toggle_init.js"></script>
+  <div class="side-bar">
+    <div class="site-header">
+      <a href="/cbs-ide/" class="site-title lh-tight">
+  CBS IDE User Guide
+</a>
+      <a href="#" id="menu-button" class="site-button">
+        <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
+      </a>
+    </div>
+    <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
+      <ul class="nav-list"><li class="nav-list-item"><a href="/cbs-ide/docs/" class="nav-list-link">Overview</a></li>
+<li class="nav-list-item"><a href="/cbs-ide/docs/installation/" class="nav-list-link">Installation</a></li>
+<li class="nav-list-item"><a href="/cbs-ide/docs/interface/" class="nav-list-link">Interface</a></li>
+<li class="nav-list-item active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="/cbs-ide/docs/specification/" class="nav-list-link active">Specification</a><ul class="nav-list"><li class="nav-list-item"><a href="/cbs-ide/docs/specification/cd-1.html" class="nav-list-link">CD-1</a></li>
+<li class="nav-list-item"><a href="/cbs-ide/docs/specification/cd-2.html" class="nav-list-link">CD-2</a></li>
+</ul>
+</li>
+<li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="/cbs-ide/docs/validation/" class="nav-list-link">Validation</a><ul class="nav-list"><li class="nav-list-item"><a href="/cbs-ide/docs/validation/cd-1.html" class="nav-list-link">CD-1</a></li>
+<li class="nav-list-item"><a href="/cbs-ide/docs/validation/cd-2.html" class="nav-list-link">CD-2</a></li>
+</ul>
+</li>
+<li class="nav-list-item"><a href="/cbs-ide/docs/formatting/" class="nav-list-link">Formatting</a></li>
+<li class="nav-list-item"><a href="/cbs-ide/docs/issues/" class="nav-list-link">Issues</a></li>
+</ul>
+    </nav>
+    <footer class="site-footer">
+      This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+    </footer>
+  </div>
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+        <div class="search">
+          <div class="search-input-wrap">
+            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search CBS IDE User Guide" aria-label="Search CBS IDE User Guide" autocomplete="off">
+            <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+          </div>
+          <div id="search-results" class="search-results"></div>
+        </div>
+        <nav aria-label="Auxiliary" class="aux-nav">
+          <ul class="aux-nav-list">
+              <li class="aux-nav-list-item">
+                <a href="//github.com/plancomps/cbs-ide/tree/main/CBS-Guide" class="site-button"
+                >
+                  CBS-Guide sources
+                </a>
+              </li>
+          </ul>
+        </nav>
+    </div>
+    <div id="main-content-wrap" class="main-content-wrap">
+<nav class="nav-rel">
+    <a href="/cbs-ide/docs/interface/" class="nav-rel-link">&larr;</a>
+    <a href="/cbs-ide/docs/validation/" class="nav-rel-link">&rarr;</a>
+</nav>
+      <div id="main-content" class="main-content" role="main">
+          <h1 id="specification">
+          <a href="#specification" class="anchor-heading" aria-labelledby="specification"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Specification
+      </h1>
+<p>This page illustrates how to create a language specification for use with the CBS IDE.</p>
+<p>You should <a href="/cbs-ide/docs/installation/#cbs-ide">install the CBS IDE</a> in Spoofax and 
+<a href="/cbs-ide/docs/installation/#cbs-beta-repository">install the CBS-beta repository</a> in your file system
+before proceeding.</p>
+      <h2 id="create-folders-and-links-in-the-file-system">
+          <a href="#create-folders-and-links-in-the-file-system" class="anchor-heading" aria-labelledby="create-folders-and-links-in-the-file-system"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Create folders and links in the file system
+      </h2>
+<ol>
+  <li>Create a folder for your own collection of languages, e.g.: <code class="language-plaintext highlighter-rouge">My-Languages</code></li>
+  <li>Choose a <em>full</em> name for your language (no spaces), e.g.: <code class="language-plaintext highlighter-rouge">CBS-Demo</code></li>
+  <li>Create the folder <code class="language-plaintext highlighter-rouge">CBS-Demo</code> in <code class="language-plaintext highlighter-rouge">My-Languages</code></li>
+  <li>Choose a <em>short</em> name for your language, e.g.: <code class="language-plaintext highlighter-rouge">CD</code></li>
+  <li>Create the folder <code class="language-plaintext highlighter-rouge">CD-cbs</code> in <code class="language-plaintext highlighter-rouge">CBS-Demo</code></li>
+  <li>Create the folder <code class="language-plaintext highlighter-rouge">CD</code> in <code class="language-plaintext highlighter-rouge">CD-cbs</code></li>
+  <li>Create the folder <code class="language-plaintext highlighter-rouge">CD-Start</code> in <code class="language-plaintext highlighter-rouge">CD</code></li>
+  <li>Create a <em>symbolic link</em> in <code class="language-plaintext highlighter-rouge">CD-cbs</code> to your copy of <code class="language-plaintext highlighter-rouge">CBS-beta/Funcons-beta</code></li>
+</ol>
+<p>Your resulting folder hierarchy should look something like this:<sup id="fnref:editor" role="doc-noteref"><a href="#fn:editor" class="footnote" rel="footnote">1</a></sup></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>My-Languages
+- CBS-Demo
+  - CD-cbs
+    - CD
+      - CD-Start
+    - Funcons-beta -&gt; YOUR-PATH-TO/CBS-beta/Funcons-beta
+
+CBS-beta
+- ...
+- Funcons-beta
+- ...
+</code></pre></div></div>
+      <h2 id="create-a-cbs-language-specification-project-in-spoofax">
+          <a href="#create-a-cbs-language-specification-project-in-spoofax" class="anchor-heading" aria-labelledby="create-a-cbs-language-specification-project-in-spoofax"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Create a CBS language specification project in Spoofax
+      </h2>
+<ol>
+  <li>Make <code class="language-plaintext highlighter-rouge">CD-cbs</code> a <em>general project</em>
+    <ol>
+      <li>Select <code class="language-plaintext highlighter-rouge">File: New: Project...: Wizards: General: Project</code>, click <code class="language-plaintext highlighter-rouge">Next</code></li>
+      <li>
+        <dl>
+          <dt>Project Name</dt>
+          <dd><code class="language-plaintext highlighter-rouge">CD-cbs</code></dd>
+          <dt>Location</dt>
+          <dd><code class="language-plaintext highlighter-rouge">YOUR-PATH-TO/My-Languages/CBS-Demo/CD-cbs</code>, click <code class="language-plaintext highlighter-rouge">Finish</code></dd>
+        </dl>
+      </li>
+    </ol>
+  </li>
+  <li>Add the <em>Spoofax nature</em> to the <code class="language-plaintext highlighter-rouge">CD-cbs</code> project:
+    <ol>
+      <li>Right-click on the project</li>
+      <li>Select <code class="language-plaintext highlighter-rouge">Spoofax: Add Spoofax nature</code></li>
+    </ol>
+  </li>
+  <li>Spoofax should now analyse your project (about 30 seconds), otherwise
+    <ol>
+      <li>Check that the <code class="language-plaintext highlighter-rouge">CBS</code> language project has already been built</li>
+      <li>Check that the <code class="language-plaintext highlighter-rouge">Spoofax (meta)</code> menu indicates that analysis is enabled</li>
+      <li>Try cleaning the <code class="language-plaintext highlighter-rouge">CD-cbs</code> project</li>
+    </ol>
+  </li>
+  <li>Expand the folder <code class="language-plaintext highlighter-rouge">CD-cbs/Funcons-beta/Funcons-Index</code> 
+and open an editor on the file <code class="language-plaintext highlighter-rouge">Funcons-Index.cbs</code></li>
+  <li>Check that:
+    <ol>
+      <li>There are no parse errors</li>
+      <li>CBS keywords and names are highlighted</li>
+      <li>Command- or Control-hovering over names makes them hyperlinks</li>
+      <li>Clicking a hyperlink opens an editor showing the declaration of the name</li>
+    </ol>
+  </li>
+</ol>
+      <h2 id="specify-your-language">
+          <a href="#specify-your-language" class="anchor-heading" aria-labelledby="specify-your-language"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Specify your language
+      </h2>
+<ol>
+  <li>Check that the <code class="language-plaintext highlighter-rouge">Spoofax (meta)</code> menu indicates that analysis is currently enabled</li>
+  <li>Create a file named <code class="language-plaintext highlighter-rouge">CD-Start.cbs</code> in the <code class="language-plaintext highlighter-rouge">CD-Start</code> folder with the following contents:<sup id="fnref:tabs" role="doc-noteref"><a href="#fn:tabs" class="footnote" rel="footnote">2</a></sup>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Language "CBS-Demo"
+    
+Syntax START:start ::= exp
+    
+Semantics start[[ _:start ]] : =&gt;values
+
+Rule start[[ E ]] =
+  initialise-binding finalise-failing eval[[ E ]]
+    
+Syntax E:exp ::= int
+               | id
+               | 'lambda' id '.' exp
+               | exp '(' exp ')'
+               | 'let' id '=' exp 'in' exp
+               | '(' exp ')'
+    
+Semantics eval[[ _:exp ]] : =&gt; values
+    
+Rule eval[[ N ]] = int[[ N ]]
+    
+Rule eval[[ X ]] = bound id[[ X ]]
+    
+Rule eval[[ 'lambda' X '.' E ]] =
+  function closure
+    scope( bind( id[[ X ]], given ), 
+           eval[[ E ]] )
+    
+Rule eval[[ E1 '(' E2 ')' ]] =
+  apply( eval[[ E1 ]], eval[[ E2 ]] )
+    
+Rule eval[[ 'let' X '=' E1 'in' E2 ]] =
+    scope( bind( id[[ X ]], eval[[ E1 ]] ), 
+           eval[[ E2 ]] )
+    
+Rule eval[[ '(' E ')' ]] = eval[[ E ]]
+    
+    
+Lexis  N:int ::= ('0'-'9')+
+    
+Semantics int[[ N:int ]] : =&gt; integers
+            = decimal \"N\"
+    
+    
+Lexis  X:id  ::= ('a'-'z') ('a'-'z'|'0'-'9')*
+    
+Semantics id[[ X:id ]] : =&gt; identifiers
+            = \"X\"
+</code></pre></div>    </div>
+  </li>
+  <li>Check that:
+    <ol>
+      <li>There are no parse errors</li>
+      <li>CBS keywords and names are highlighted</li>
+      <li>Command- or Control-hovering over names makes them hyperlinks</li>
+      <li>Clicking a hyperlink scrolls to the declaration of the name</li>
+    </ol>
+  </li>
+</ol>
+<blockquote class="note">
+  <p>You can now <a href="/cbs-ide/docs/validation/">validate</a> the above language specification
+by generating a translator from programs to funcons,
+and checking the outcomes of executing translations of test programs</p>
+</blockquote>
+      <h2 id="evolve-a-language-and-its-specification">
+          <a href="#evolve-a-language-and-its-specification" class="anchor-heading" aria-labelledby="evolve-a-language-and-its-specification"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Evolve a language and its specification
+      </h2>
+<p>The following pages suggest various extensions of the language specified above.</p>
+<p>You can add extensions to the specification of language syntax and semantics
+in <code class="language-plaintext highlighter-rouge">CD-Start.cbs</code> in any order.
+However, specification of syntactic grouping disambiguation is less modular;
+following the order shown below should ensure correct parsing of the suggested test programs
+when validating each extension.</p>
+<p>In CBS, a language specification is <em>not</em> treated as a reusable component.
+You should invasively edit it when extending the specified language.
+If you commit each extension to a repository,
+you can compare commits to display their differences visually in Spoofax
+(the local history feature might also be used).</p><hr />
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:editor" role="doc-endnote">
+      <p><code class="language-plaintext highlighter-rouge">CBS-Demo</code> will contain also the generated <code class="language-plaintext highlighter-rouge">CD-Editor</code>,
+and a folder <code class="language-plaintext highlighter-rouge">CD-Tests</code> of test programs.
+The <code class="language-plaintext highlighter-rouge">CD</code> folder supports division of a language specification into multiple sections.
+Folders such as <code class="language-plaintext highlighter-rouge">CD-Start</code> can contain formatted versions of CBS source files. <a href="#fnref:editor" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:tabs" role="doc-endnote">
+      <p>To ensure that indentation is preserved when viewing CBS specifications
+in different editors and browsers, 
+avoid conversion of spaces to tab characters when entering or editing text. <a href="#fnref:tabs" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+          <hr>
+  <p class="nav-rel">
+      <a href="/cbs-ide/docs/interface/" class="nav-rel-link">&larr;</a>
+      <a href="/cbs-ide/docs/validation/" class="nav-rel-link">&rarr;</a>
+  </p>
+<h2 class="text-delta">Table of contents</h2>
+  <ul><li>
+        <a href="/cbs-ide/docs/specification/cd-1.html">CD-1</a></li><li>
+        <a href="/cbs-ide/docs/specification/cd-2.html">CD-2</a></li></ul>
+          <hr>
+          <footer>
+            <a href="https://github.com/plancomps/cbs-beta-tools/issues" class="fs-2">cbs-beta-tools reported issues</a>
+          </footer>
+      </div>
+    </div>
+      <div class="search-overlay"></div>
+  </div>
+  <script type="text/javascript" src="/cbs-ide/assets/js/toggle_mode.js"></script>
+</body>
+</html>
